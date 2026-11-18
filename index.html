@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#a15f70">
+  <meta name="description" content="Thoughtful, clean beauty for every skin and every day.">
+  <title>Velvetique Beauty | Thoughtful beauty for every day</title>
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <div class="announcement">
+    <span>Complimentary shipping on orders over $75</span>
+    <span class="announcement-code">Use code <strong>GLOW15</strong> for 15% off</span>
+  </div>
+  <header class="site-header">
+    <a class="wordmark" href="#/" aria-label="Velvetique Beauty home">
+      <span class="wordmark-flower" aria-hidden="true">✿</span>
+      <span>VELVETIQUE</span><small>BEAUTY</small>
+    </a>
+    <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false"><span></span><span></span></button>
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="#/" data-route="home">Home</a>
+      <a href="#/shop" data-route="shop">Shop</a>
+      <a href="#/collections" data-route="collections">Collections</a>
+      <a href="#/about" data-route="about">About</a>
+      <a href="#/journal" data-route="journal">Journal</a>
+      <a href="#/contact" data-route="contact">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-button" type="button" data-action="search" aria-label="Search products"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.6"></circle><path d="m16 16 4.5 4.5"></path></svg></button>
+      <a class="icon-button account-link" href="#/account" aria-label="Your account"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="3.4"></circle><path d="M5.2 20c.5-3.5 3.2-5.4 6.8-5.4s6.3 1.9 6.8 5.4"></path></svg></a>
+      <a class="icon-button bag-link" href="#/cart" aria-label="Shopping bag"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l1 13H4L5 8Z"></path><path d="M9 9V6a3 3 0 0 1 6 0v3"></path></svg><span class="bag-count" aria-live="polite">0</span></a>
+    </div>
+  </header>
+  <main id="app" tabindex="-1" aria-live="polite"></main>
+  <footer class="site-footer">
+    <div class="footer-benefits">
+      <div><span class="benefit-icon">↗</span><p><strong>Free shipping</strong><small>On orders over $75</small></p></div>
+      <div><span class="benefit-icon">⟳</span><p><strong>Easy returns</strong><small>30 days to find your glow</small></p></div>
+      <div><span class="benefit-icon">◇</span><p><strong>Secure payment</strong><small>Checkout with confidence</small></p></div>
+      <div><span class="benefit-icon">◌</span><p><strong>Here to help</strong><small>Thoughtful support, always</small></p></div>
+    </div>
+    <div class="footer-main">
+      <div class="footer-brand"><a class="wordmark wordmark-light" href="#/">VELVETIQUE<small>BEAUTY</small></a><p>Thoughtful beauty for<br>every skin, every day.</p><small>© 2026 Velvetique Beauty</small></div>
+      <div><h3>Explore</h3><a href="#/shop">Shop all</a><a href="#/collections">Collections</a><a href="#/about">Our story</a><a href="#/journal">The journal</a></div>
+      <div><h3>Customer care</h3><a href="#/contact">Contact us</a><a href="#/shipping">Shipping & returns</a><a href="#/faq">FAQs</a><a href="#/privacy">Privacy</a></div>
+      <form class="newsletter-form" novalidate>
+        <h3>A little glow in your inbox</h3><p>New rituals, thoughtful tips, and 15% off your first order.</p>
+        <div class="newsletter-control"><label class="visually-hidden" for="newsletter-email">Email address</label><input id="newsletter-email" name="email" type="email" placeholder="Your email address" required><button type="submit" aria-label="Subscribe">Join</button></div>
+        <span class="form-message" aria-live="polite"></span>
+      </form>
+    </div>
+  </footer>
+  <script id="catalog-data" type="application/json">
+  {
+    "categories": [
+      {"name":"Skincare","image":"https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?auto=format&fit=crop&w=480&q=80"},
+      {"name":"Makeup","image":"https://images.unsplash.com/photo-1596462502278-27bfdc403348?auto=format&fit=crop&w=480&q=80"},
+      {"name":"Haircare","image":"https://images.unsplash.com/photo-1527799820374-dcf8d9d4a388?auto=format&fit=crop&w=480&q=80"},
+      {"name":"Bodycare","image":"https://images.unsplash.com/photo-1601049541289-9b1b7bbbfe19?auto=format&fit=crop&w=480&q=80"},
+      {"name":"Sun care","image":"https://images.unsplash.com/photo-1556229010-6c3f2c9ca5f8?auto=format&fit=crop&w=480&q=80"},
+      {"name":"Gift sets","image":"https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?auto=format&fit=crop&w=480&q=80"}
+    ],
+    "products": [
+      {"id":"cleanser","name":"Oil Control Face Wash","description":"Salicylic acid · 120 ml","category":"Skincare","price":24,"rating":4.9,"reviews":125,"label":"Bestseller","featured":true,"image":"https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?auto=format&fit=crop&w=600&q=80"},
+      {"id":"serum","name":"10% Niacinamide Serum","description":"For a balanced, dewy glow · 30 ml","category":"Skincare","price":28,"rating":4.8,"reviews":200,"label":"Fan favorite","featured":true,"image":"https://images.unsplash.com/photo-1601049541289-9b1b7bbbfe19?auto=format&fit=crop&w=600&q=80"},
+      {"id":"moisturizer","name":"Hydra Intense Gel Moisturizer","description":"Weightless daily hydration · 50 ml","category":"Skincare","price":32,"rating":4.9,"reviews":185,"label":"Bestseller","featured":true,"image":"https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?auto=format&fit=crop&w=600&q=80&sat=-20"},
+      {"id":"lipstick","name":"Velvet Matte Lipstick","description":"Comfortable color that stays · 4 g","category":"Makeup","price":22,"rating":4.7,"reviews":98,"label":"New shade","featured":true,"image":"https://images.unsplash.com/photo-1586495777744-4413f21062fa?auto=format&fit=crop&w=600&q=80"},
+      {"id":"hair-mask","name":"Nourish & Restore Hair Mask","description":"A soft reset for dry ends · 200 ml","category":"Haircare","price":26,"rating":4.8,"reviews":74,"label":"Weekly ritual","featured":false,"image":"https://images.unsplash.com/photo-1527799820374-dcf8d9d4a388?auto=format&fit=crop&w=600&q=80"},
+      {"id":"body-lotion","name":"Comforting Body Lotion","description":"Squalane + oat · 200 ml","category":"Bodycare","price":30,"rating":4.9,"reviews":112,"label":"Soft skin","featured":false,"image":"https://images.unsplash.com/photo-1601049541289-9b1b7bbbfe19?auto=format&fit=crop&w=600&q=80"},
+      {"id":"daily-spf","name":"Daily Dew SPF 30","description":"Broad spectrum · 50 ml","category":"Sun care","price":25,"rating":4.8,"reviews":143,"label":"Daily essential","featured":false,"image":"https://images.unsplash.com/photo-1556229010-6c3f2c9ca5f8?auto=format&fit=crop&w=600&q=80"},
+      {"id":"glow-set","name":"The Everyday Glow Set","description":"Three little moments of care","category":"Gift sets","price":58,"rating":5,"reviews":61,"label":"Gift-ready","featured":false,"image":"https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?auto=format&fit=crop&w=600&q=80"}
+    ],
+    "collections": [
+      {"title":"The daily edit","kicker":"Your everyday rhythm","copy":"Easy, proven essentials to meet your skin where it is.","category":"Skincare","image":"https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?auto=format&fit=crop&w=900&q=80"},
+      {"title":"A little color","kicker":"Make room to play","copy":"Comfort-first color for the days you want a little extra.","category":"Makeup","image":"https://images.unsplash.com/photo-1596462502278-27bfdc403348?auto=format&fit=crop&w=900&q=80"},
+      {"title":"The softer side","kicker":"Care from head to toe","copy":"Comforting formulas for rituals that feel like a reset.","category":"Bodycare","image":"https://images.unsplash.com/photo-1601049541289-9b1b7bbbfe19?auto=format&fit=crop&w=900&q=80"}
+    ],
+    "articles": [
+      {"slug":"barrier-first","category":"Skin notes","readTime":"4 min read","title":"A kinder routine starts with your skin barrier","copy":"A few thoughtful steps can go a long way toward keeping your skin feeling comfortable.","image":"https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?auto=format&fit=crop&w=900&q=80"},
+      {"slug":"slow-morning","category":"Rituals","readTime":"3 min read","title":"Make a little room for a slower morning","copy":"A simple, grounding ritual does not need a dozen steps or an extra hour.","image":"https://images.unsplash.com/photo-1601049541289-9b1b7bbbfe19?auto=format&fit=crop&w=900&q=80"},
+      {"slug":"ingredient-notes","category":"Ingredient notes","readTime":"5 min read","title":"Niacinamide, without the noise","copy":"A practical look at what this much-loved ingredient can do for your routine.","image":"https://images.unsplash.com/photo-1556229010-6c3f2c9ca5f8?auto=format&fit=crop&w=900&q=80"}
+    ]
+  }
+  </script>
+  <dialog class="search-dialog" aria-label="Search the store"><form method="dialog" class="search-close-row"><button class="icon-button" aria-label="Close search">×</button></form><label for="search-input">What are you looking for?</label><input id="search-input" type="search" placeholder="Try serum, cleanser, moisturizer"><div class="search-results"></div></dialog>
+  <div class="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
